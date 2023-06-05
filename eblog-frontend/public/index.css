@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+/* wrapper */
+.layout {
+  position: relative;
+  margin: 20px auto;
+  width: 80%;
+}
+
+/* error or empty loading */
+.loading {
+  flex: 0 0 60%;
+  margin: 1em auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(113, 112, 112);
+}
+
+/* font */
+.title {
+  text-align: center;
+  color: rgb(113, 112, 112);
+}
+
+.passage {
+  text-align: left;
+  font-size: 20px;
+  line-height: 2em;
+  text-indent: 2em;
+  color: rgb(113, 112, 112);
+}
+
+.tip {
+  text-align: center;
+  color: rgb(113, 112, 112);
+}
+
+.tip-b {
+  text-align: center;
+  color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* background */
+
+.view-loss {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* search */
+.search {
+  z-index: 100;
+  position: fixed;
+  top: 20%;
+  left: 90%;
+}
+
+/* flex */
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-row-1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-row-1 > * {
+  flex: 0 0 100%;
+}
+
+.flex-row-2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-row-2 > * {
+  flex: 40%;
+}
+
+.flex-row-3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-row-3 > * {
+  flex: 30%;
+}
+
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* left */
+.left-enter-active,
+.left-leave-active {
+  transition: transform 1s;
+}
+.left-enter-from,
+.left-leave-to {
+  transform: translate(-200%, 0);
+  opacity: 0;
+}
+
+/* right */
+.right-enter-active,
+.right-leave-active {
+  transition: transform 1s;
+}
+.right-enter-from,
+.right-leave-to {
+  transform: translate(300%, 0);
+  opacity: 0;
+}
